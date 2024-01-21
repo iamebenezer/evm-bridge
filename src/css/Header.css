@@ -1,0 +1,79 @@
+/* Navigation bar styling */
+nav {
+  background-color: #101112;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo,
+.logo-image {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+.logo-image {
+  height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a,
+nav ul li button {
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 15px;
+}
+
+/* Button styling */
+nav ul li button {
+  background-color: white;
+  color: #b026ff;
+  border: 2px solid #b026ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.wallet-address-button,
+.connect {
+  font-family: "VAG Rounded";
+}
+
+nav ul li button:hover {
+  background-color: #fff;
+  color: #b026ff;
+  border-color: #b026ff;
+}
+
+/* Hover effects */
+a.active,
+a:hover,
+button:hover {
+  background: #000;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}

@@ -1,0 +1,243 @@
+/* Hero section styles */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px 0;
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+  font-family: "VAG Rounded";
+  src: url("../fonts/VAG Rounded Black.ttf") format("truetype");
+}
+.hero-image {
+  max-width: 100%;
+  height: 100px;
+}
+
+/* Style for the input box */
+input[type="text"] {
+  padding: 10px;
+  margin: 20px 0;
+  width: 300px;
+}
+
+/* Style for the bridge button */
+button {
+  background-color: #101112;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b026ff;
+}
+
+.switch {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+}
+.switch input {
+  appearance: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background: #1e1e1e;
+  color: white;
+  outline: none;
+}
+
+.switch input::before,
+.switch input::after {
+  z-index: 2;
+  position: absolute;
+  top: 56%;
+  transform: translateY(-50%);
+  font-weight: bolder;
+}
+
+.switch input::before {
+  content: "ETH";
+  left: 40px;
+  right: 10px;
+  top: -10px;
+}
+
+.switch input::after {
+  content: "Mii";
+  right: 20px;
+  top: -10px;
+  left: 134px;
+}
+
+.switch input:checked {
+  background: #1e1e1e;
+}
+
+.switch label {
+  z-index: 1;
+  position: absolute;
+  top: -30px;
+  bottom: 9px;
+  border-radius: 20px;
+}
+
+.switch input {
+  transition: 0.25s;
+}
+
+.switch input:checked::after {
+  color: #fff;
+  transition: color 0.5s;
+}
+.switch input:checked::before {
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.switch input:checked + label {
+  left: 10px;
+  right: 100px;
+  background: #b026ff;
+  transition: left 0.5s, right 0.4s 0.2s;
+}
+
+.switch input:not(:checked) {
+  background: #b026ff;
+  transition: background 0.4s;
+}
+
+.switch input:not(:checked)::before {
+  color: #fff;
+  transition: color 0.5s;
+}
+.switch input:not(:checked)::after {
+  color: #000;
+  transition: color 0.5s 0.2s;
+}
+
+.switch input:not(:checked) + label {
+  left: 100px;
+  right: 10px;
+  background: #fff;
+  transition: left 0.4s 0.2s, right 0.5s, background 0.35s;
+}
+
+.switch label[for="switcher"] {
+  z-index: 1;
+  position: absolute;
+  top: -30px;
+  bottom: 9px;
+  border-radius: 20px;
+  left: 10px;
+  right: 100px;
+  background: white;
+  transition: left 0.5s, right 0.4s 0.2s;
+}
+
+.bridge-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 25px;
+  color: white;
+}
+
+/* Style for the bridge-box */
+.bridge-box {
+  background-color: white;
+  padding: 50px;
+  margin: 40px;
+  border-radius: 25px;
+  font-family: "VAG Rounded";
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bridge-box h1 {
+  font-family: "VAG Rounded";
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.bridge-box .switch {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Style for the input box */
+input[type="text"] {
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+  border: 2px solid #b026ff;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  transition: border-color 0.3s ease;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Style for input box on focus */
+input[type="text"]:focus {
+  border-color: #b026ff;
+}
+
+.token-balance {
+  margin-right: 20px;
+}
+.bridge-box button {
+  background-color: #101112;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.bridge-box button:hover {
+  background-color: #b026ff;
+}
+
+.error-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.error-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative; /* Added for positioning the close button */
+}
+
+.close-button {
+  position: absolute;
+  color: #000 !important;
+  background-color: white !important;
+  top: -50px;
+  right: -70px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}

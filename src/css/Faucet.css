@@ -1,0 +1,146 @@
+.faucet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 600px;
+  background-color: white;
+  color: black;
+  margin: 100px auto; /* Centered horizontally */
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.faucet-heading {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.faucet-form {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.faucet-textfield {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.faucet-button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal a {
+  color: lawngreen;
+}
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: purple;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+}
+.close-button {
+  position: absolute;
+  right: -54px;
+  top: -74px;
+  left: 425px;
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+  background-color: red !important;
+  color: white !important;
+  height: 42px;
+  width: 40px;
+  border-radius: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* Add to Faucet.css */
+.faucet-button.sending {
+  background-color: green;
+  color: white;
+}
+
+.faucet-button.invalid {
+  background-color: red;
+  color: white;
+}
+
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faucet-container {
+    width: 75%;
+    height: 300px;
+    margin: 225px auto;
+  }
+
+  .faucet-heading {
+    font-size: 2rem;
+  }
+
+  .faucet-form {
+    max-width: 400px;
+  }
+
+  .faucet-textfield,
+  .faucet-button {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faucet-container {
+    width: 80%;
+    height: 300px;
+    margin: 250px auto;
+  }
+
+  .faucet-heading {
+    font-size: 25px;
+  }
+
+  .faucet-form {
+    max-width: 300px;
+  }
+}
